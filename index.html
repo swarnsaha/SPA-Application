@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <div id="start-page" class="text-center">
+            <h1>Welcome to the Quiz Application</h1>
+            <form id="start-quiz-form">
+                <div class="form-group">
+                    <label for="user-name">Enter your name:</label>
+                    <input type="text" id="user-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="quiz-selection">Select a quiz:</label>
+                    <select id="quiz-selection" class="form-select" required>
+                        <option value="">Choose a quiz</option>
+                        <option value="1">Quiz 1</option>
+                        <option value="2">Quiz 2</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Start Quiz</button>
+            </form>
+        </div>
+        <div id="quiz-container" class="d-none">
+            <div id="scoreboard">
+                <p>Questions answered: <span id="questions-answered">0</span></p>
+                <p>Elapsed time: <span id="elapsed-time">0</span> seconds</p>
+                <p>Total score: <span id="total-score">0</span></p>
+            </div>
+            <div id="quiz-content">
+                <script id="multiple-choice-question-template" type="text/x-handlebars-template">
+                    <div class="question">
+                        <p>{{questionText}}</p>
+                        <div class="options">
+                            {{#each options}}
+                                <button type="button" class="option">{{this}}</button>
+                            {{/each}}
+                        </div>
+                    </div>
+                </script>
+                <script id="fill-in-the-blank-template" type="text/x-handlebars-template">
+                    <div class="question">
+                        <p>{{questionText}}</p>
+                        <div class="options">
+                            <input type="text" id="blank-answer" class="form-control">
+                            <button type="button" class="option btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </script>
+                <script id="multiple-answer-template" type="text/x-handlebars-template">
+                    <div class="question">
+                        <p>{{questionText}}</p>
+                        <div class="options">
+                            {{#each options}}
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="{{this}}" id="option-{{@index}}">
+                                    <label class="form-check-label" for="option-{{@index}}">{{this}}</label>
+</div>
+  {{/each}}
+  <button type="button" class="option btn btn-primary">Submit</button>
+</div>
+  </div>
+  </script>
+            <script id="true-or-false-template" type="text/x-handlebars-template">
+                <div class="question">
+                    <p>{{questionText}}</p>
+                    <div class="options">
+                        <button type="button" class="option">True</button>
+                        <button type="button" class="option">False</button>
+                    </div>
+                </div>
+            </script>
+            <script id="matching-template" type="text/x-handlebars-template">
+                <div class="question">
+                    <p>{{questionText}}</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-group">
+                                {{#each leftColumn}}
+                                    <li class="list-group-item">{{this}}</li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-group">
+                                {{#each rightColumn}}
+                                    <li class="list-group-item">{{this}}</li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="options mt-3">
+                        <button type="button" class="option btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </script>
+        </div>
+        <div id="feedback-container" class="d-none">
+            <p id="feedback-message"></p>
+            <button id="next-question" class="btn btn-primary">Got it</button>
+        </div>
+    </div>
+    <div id="result-page" class="d-none text-center">
+        <h1 id="result-message"></h1>
+        <button id="retake-quiz" class="btn btn-primary">Retake Quiz</button>
+        <button id="return-main" class="btn btn-secondary">Return to Main Page</button>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
