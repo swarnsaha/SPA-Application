@@ -1,0 +1,297 @@
+{
+  "quiz1": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "Which of the following is not a JavaScript data type?",
+      "options": ["String", "Number", "Boolean", "Character"],
+      "correct_answer": "Character"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "What is the correct way to create an array in JavaScript?",
+      "options": [
+        "var arr = [1, 2, 3];",
+        "var arr = new Array(1, 2, 3);",
+        "Both a and b",
+        "None of the above"
+      ],
+      "correct_answer": "Both a and b"
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "question": "Which of the following is not a valid JavaScript variable name?",
+      "options": ["_variable", "1variable", "variable", "$variable"],
+      "correct_answer": "1variable"
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "question": "How can you add a comment in JavaScript?",
+      "options": [
+        "// This is a comment",
+        "<!-- This is a comment -->",
+        "/* This is a comment */",
+        "Both a and c"
+      ],
+      "correct_answer": "Both a and c"
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "question": "What is the correct syntax for referring to an external JavaScript file?",
+      "options": [
+        "<script href='script.js'></script>",
+        "<script src='script.js'></script>",
+        "<link rel='script' href='script.js'>",
+        "<script url='script.js'></script>"
+      ],
+      "correct_answer": "<script src='script.js'></script>"
+    },
+    {
+      "id": 6,
+      "type": "text_input",
+      "question": "What keyword is used to declare a variable in JavaScript?",
+      "correct_answer": "var"
+    },
+    {
+      "id": 7,
+      "type": "text_input",
+      "question": "What is the method used to display a message in the browser's console?",
+      "correct_answer": "console.log"
+    },
+    {
+      "id": 8,
+      "type": "text_input",
+      "question": "What is the method used to display an alert box in the browser?",
+      "correct_answer": "alert"
+    },
+    {
+      "id": 9,
+      "type": "text_input",
+      "question": "What is the method used to display a prompt box in the browser?",
+      "correct_answer": "prompt"
+    },
+    {
+      "id": 10,
+      "type": "text_input",
+      "question": "What is the method used to display a confirm box in the browser?",
+      "correct_answer": "confirm"
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "question": "Which of these is not a looping structure in JavaScript?",
+      "options": ["for", "while", "do-while", "repeat-until"],
+      "correct_answer": "repeat-until"
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "question": "Which of the following is not an example of a JavaScript event?",
+      "options": ["click", "mouseover", "keydown", "load"],
+      "correct_answer": "load"
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "question": "What is the correct syntax for adding an event listener in JavaScript?",
+      "options": [
+        "element.addEventListener('click', function);",
+        "element.on('click', function);",
+        "element.bind('click', function);",
+        "element.click(function);"
+      ],
+      "correct_answer": "element.addEventListener('click', function);"
+    },
+    {
+      "id": 14,
+      "type": "text_input",
+      "question": "What is the JavaScript method used to change the content of an HTML element?",
+      "correct_answer": "innerHTML"
+    },
+    {
+      "id": 15,
+      "type": "text_input",
+      "question": "What is the JavaScript method used to change the style of an HTML element?",
+      "correct_answer": "style"
+    },
+    {
+      "id": 16,
+      "type": "text_input",
+      "question": "What is the JavaScript method used to get the value of an input element?",
+      "correct_answer": "value"
+    },
+    {
+      "id": 17,
+      "type": "text_input",
+      "question": "What is the JavaScript method used to get an HTML element by its ID?",
+      "correct_answer": "getElementById"
+    },
+    {
+      "id": 18,
+      "type": "text_input",
+      "question": "What is the JavaScript method used to get all HTML elements with a specific class name?",
+      "correct_answer": "getElementsByClassName"
+    },
+    {
+      "id": 19,
+      "type": "text_input",
+      "question": "What is the JavaScript method used to get all HTML elements with a specific tag name?",
+      "correct_answer": "getElementsByTagName"
+    },
+    {
+      "id": 20,
+      "type": "text_input",
+      "question": "What is the JavaScript method used to get an HTML element by its CSS selector?",
+      "correct_answer": "querySelector"
+    }
+  ]
+}
+{
+  "quiz2": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "Which of the following is not a valid Python data type?",
+      "options": ["str", "int", "bool", "char"],
+      "correct_answer": "char"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "What is the correct way to create a list in Python?",
+      "options": [
+        "my_list = [1, 2, 3];",
+        "my_list = new list(1, 2, 3);",
+        "my_list = list(1, 2, 3);",
+        "my_list = List.create(1, 2, 3);"
+      ],
+      "correct_answer": "my_list = [1, 2, 3];"
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "question": "Which of the following is not a valid Python variable name?",
+      "options": ["_variable", "1variable", "variable", "$variable"],
+      "correct_answer": "1variable"
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "question": "How do you add a comment in Python?",
+      "options": [
+        "// This is a comment",
+        "<!-- This is a comment -->",
+        "# This is a comment",
+        "/* This is a comment */"
+      ],
+      "correct_answer": "# This is a comment"
+    },
+    {
+      "id": 5,
+      "type": "text_input",
+      "question": "What is the method used to get the length of a list in Python?",
+      "correct_answer": "len"
+    },
+    {
+      "id": 6,
+      "type": "text_input",
+      "question": "What keyword is used to define a function in Python?",
+      "correct_answer": "def"
+    },
+    {
+      "id": 7,
+      "type": "text_input",
+      "question": "What keyword is used to create a class in Python?",
+      "correct_answer": "class"
+    },
+    {
+      "id": 8,
+      "type": "text_input",
+      "question": "Which keyword is used to import a module in Python?",
+      "correct_answer": "import"
+    },
+    {
+      "id": 9,
+      "type": "text_input",
+      "question": "Which keyword is used to raise an exception in Python?",
+      "correct_answer": "raise"
+    },
+    {
+      "id": 10,
+      "type": "text_input",
+      "question": "What is the method used to convert a string to a number in Python?",
+      "correct_answer": "int"
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "question": "Which of these is not a looping structure in Python?",
+      "options": ["for", "while", "do-while", "for-each"],
+      "correct_answer": "do-while"
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "question": "What is the correct syntax for a Python if-else statement?",
+      "options": [
+        "if x > y: ... else: ...",
+        "if (x > y) { ... } else { ... }",
+        "if x > y then ... else ...",
+        "if x > y; ... else; ..."
+      ],
+      "correct_answer": "if x > y: ... else: ..."
+    },
+    {
+      "id": 13,
+      "type": "text_input",
+      "question": "What is the method used to add an item to the end of a list in Python?",
+      "correct_answer": "append"
+    },
+    {
+      "id": 14,
+      "type": "text_input",
+      "question": "What is the method used to remove an item from a list in Python?",
+      "correct_answer": "remove"
+    },
+    {
+      "id": 15,
+      "type": "text_input",
+      "question": "What is the method used to insert an item at a specific position in a list in Python?",
+      "correct_answer": "insert"
+    },
+    {
+      "id": 16,
+      "type": "text_input",
+      "question": "What is the method used to sort a list in Python?",
+      "correct_answer": "sort"
+    },
+    {
+      "id": 17,
+      "type": "text_input",
+      "question": "What is the method used to reverse the order of a list in Python?",
+      "correct_answer": "reverse"
+    },
+    {
+      "id": 18,
+      "type": "text_input",
+      "question": "What is the method used to join two lists in Python?",
+      "correct_answer": "extend"
+    },
+    {
+      "id": 19,
+      "type": "text_input",
+      "question": "What is the method used to create a shallow copy of a list in Python?",
+      "correct_answer": "copy"
+    },
+    {
+      "id": 20,
+      "type": "text_input",
+      "question": "What is the method used to create a deep copy of a list in Python?",
+      "correct_answer": "deepcopy"
+    }
+  ]
+}
